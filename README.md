@@ -6,10 +6,7 @@ Each folder contains the project question (image) and its implementation file (`
 ---
 
 ## 🧩 List of Projects
-1. Basic Topology
-2. VLAN Configuration
-3. Static Routing
-4. DHCP Setup
+1. Simple Office Networking Project
 
 ---
 
