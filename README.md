@@ -7,6 +7,7 @@ Each folder contains the project question (image) and its implementation file (`
 
 ## 🧩 List of Projects
 1. Simple Office Networking Project
+2. Simple Company Networking Project
 
 ---
 
