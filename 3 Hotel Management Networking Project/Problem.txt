@@ -1,0 +1,143 @@
+🇬🇧 Vic Modern Hotel Networking Project — Question (English Version)
+End of Year Networking Project
+
+As part of your end-of-year networking project, you are required to design and implement the Vic Modern Hotel network.
+
+The hotel has three floors:
+
+First floor: Reception, Store, and Logistics departments
+
+Second floor: Finance, HR, and Sales/Marketing departments
+
+Third floor: IT and Administration departments
+
+You are required to consider the following during the design and implementation:
+
+There should be three routers connecting each floor (all placed in the server room within the IT department).
+
+All routers should be connected to each other using serial DCE cables.
+
+The networks between routers should use the following IP ranges:
+
+10.10.10.0/30
+
+10.10.10.4/30
+
+10.10.10.8/30
+
+Each floor must have one switch (placed on the respective floor).
+
+Each floor should have Wi-Fi networks connected to laptops and mobile phones.
+
+Each department must have one printer.
+
+Each department must be configured in a different VLAN with the following details:
+
+VLAN and Network Details
+1st Floor:
+
+Reception – VLAN 80, Network: 192.168.8.0/24
+
+Store – VLAN 70, Network: 192.168.7.0/24
+
+Logistics – VLAN 60, Network: 192.168.6.0/24
+
+2nd Floor:
+
+Finance – VLAN 50, Network: 192.168.5.0/24
+
+HR – VLAN 40, Network: 192.168.4.0/24
+
+Sales/Marketing – VLAN 30, Network: 192.168.3.0/24
+
+3rd Floor:
+
+Admin – VLAN 20, Network: 192.168.2.0/24
+
+IT – VLAN 10, Network: 192.168.1.0/24
+
+Additional Requirements
+
+Use OSPF as the routing protocol to advertise all routes.
+
+All devices in the network must obtain IP addresses dynamically (DHCP configured on the respective routers).
+
+Ensure that all devices can communicate with each other across all floors.
+
+Configure SSH on all routers for secure remote login.
+
+In the IT department, connect a PC named Test-PC to port Fa0/1 and use it to test remote login.
+
+Configure port security on the IT department switch to allow only Test-PC to access port Fa0/1, using the sticky method to obtain its MAC address. Set the violation mode to “shutdown”.
+
+🇸🇦 مشروع شبكة فندق فيك مودرن — السؤال (النسخة العربية)
+مشروع الشبكات لنهاية العام
+
+كجزء من مشروعك النهائي في مادة الشبكات، يُطلب منك تصميم وتنفيذ شبكة فندق فيك مودرن (Vic Modern Hotel).
+
+يتكون الفندق من ثلاثة طوابق كما يلي:
+
+الطابق الأول: قسم الاستقبال (Reception)، المخزن (Store)، والخدمات اللوجستية (Logistics)
+
+الطابق الثاني: قسم المالية (Finance)، الموارد البشرية (HR)، والمبيعات/التسويق (Sales/Marketing)
+
+الطابق الثالث: قسم تقنية المعلومات (IT) والإدارة (Admin)
+
+يجب مراعاة النقاط التالية أثناء التصميم والتنفيذ:
+
+يوجد ثلاثة راوترات تربط بين الطوابق الثلاثة (جميعها موضوعة في غرفة السيرفر ضمن قسم الـ IT).
+
+يجب أن تكون الراوترات متصلة ببعضها باستخدام كابلات Serial DCE.
+
+الشبكات بين الراوترات يجب أن تكون كما يلي:
+
+10.10.10.0/30
+
+10.10.10.4/30
+
+10.10.10.8/30
+
+كل طابق يحتوي على سويتش واحد موضوع في نفس الطابق.
+
+يجب أن يحتوي كل طابق على شبكة واي فاي (Wi-Fi) متصلة بأجهزة اللابتوب والهواتف.
+
+يجب أن يحتوي كل قسم على طابعة واحدة.
+
+يجب أن يكون لكل قسم VLAN مختلفة وفق التفاصيل التالية:
+
+تفاصيل الـ VLAN وعناوين الشبكات
+الطابق الأول:
+
+Reception (الاستقبال) – VLAN 80، الشبكة: 192.168.8.0/24
+
+Store (المخزن) – VLAN 70، الشبكة: 192.168.7.0/24
+
+Logistics (الخدمات اللوجستية) – VLAN 60، الشبكة: 192.168.6.0/24
+
+الطابق الثاني:
+
+Finance (المالية) – VLAN 50، الشبكة: 192.168.5.0/24
+
+HR (الموارد البشرية) – VLAN 40، الشبكة: 192.168.4.0/24
+
+Sales/Marketing (المبيعات/التسويق) – VLAN 30، الشبكة: 192.168.3.0/24
+
+الطابق الثالث:
+
+Admin (الإدارة) – VLAN 20، الشبكة: 192.168.2.0/24
+
+IT (تقنية المعلومات) – VLAN 10، الشبكة: 192.168.1.0/24
+
+متطلبات إضافية
+
+استخدم بروتوكول OSPF كـ بروتوكول توجيه (Routing Protocol) لنشر الشبكات بين الراوترات.
+
+يجب أن تحصل جميع الأجهزة على عناوين IP بشكل ديناميكي (DHCP) من الراوتر المسؤول عن طابقها.
+
+يجب أن تكون جميع الأجهزة قادرة على التواصل مع بعضها البعض بين جميع الطوابق.
+
+قم بإعداد SSH على جميع الراوترات للاتصال الآمن عن بُعد.
+
+في قسم تقنية المعلومات (IT)، قم بإضافة حاسوب باسم Test-PC إلى المنفذ Fa0/1 واستخدمه لاختبار الاتصال البعيد (SSH).
+
+قم بإعداد أمن المنافذ (Port Security) في سويتش قسم الـ IT بحيث يُسمح فقط لجهاز Test-PC بالوصول إلى المنفذ Fa0/1 باستخدام الطريقة Sticky لاكتساب عنوان MAC تلقائي، مع جعل وضع المخالفة (Violation Mode) هو Shutdown.
